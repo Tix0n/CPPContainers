@@ -1,8 +1,8 @@
 FLAGS = -Wall -Werror -Wextra  -g -pthread
 
-SRC = s21_containers/general_structures/container.tpp s21_containers/set/set.tpp s21_containers/map/map.tpp \
+SRC = s21_containers/general_structures/container.tpp \
 			s21_containers/stack/stack.tpp s21_containers/queue/queue.tpp s21_containers/vector/vector.tpp s21_containers/list/list.tpp 
-OBJ = $(SRC:.cc =.o)
+OBJ = $(SRC:.tpp =.o)
 
 all: clean test
 
